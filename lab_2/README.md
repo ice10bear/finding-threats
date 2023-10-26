@@ -107,8 +107,6 @@ starwars %>%
 
 #### 5. Найти самого высокого персонажа.
 
-1 способ:
-
 ``` r
 starwars %>% 
   filter(height == max(height, na.rm = TRUE))
@@ -121,20 +119,6 @@ starwars %>%
     # ℹ 5 more variables: homeworld <chr>, species <chr>, films <list>,
     #   vehicles <list>, starships <list>
 
-2 способ:
-
-``` r
-starwars %>%
-  arrange(desc(height)) %>%
-  head(1)
-```
-
-    # A tibble: 1 × 14
-      name      height  mass hair_color skin_color eye_color birth_year sex   gender
-      <chr>      <int> <dbl> <chr>      <chr>      <chr>          <dbl> <chr> <chr> 
-    1 Yarael P…    264    NA none       white      yellow            NA male  mascu…
-    # ℹ 5 more variables: homeworld <chr>, species <chr>, films <list>,
-    #   vehicles <list>, starships <list>
 
 #### 6. Найти всех персонажей ниже 170
 
