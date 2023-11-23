@@ -543,11 +543,11 @@ double quotes where I’ve put “your_name_here”. Try it now, storing the
 result in a new variable called my_name.
 
 ``` r
-my_name <- c(my_char, "Georgy")
+my_name <- c(my_char, "Mary")
 my_name
 ```
 
-    [1] "My"     "name"   "is"     "Georgy"
+    [1] "My"     "name"   "is"     "Mary"
 
 Now, use the paste() function once more to join the words in my_name
 together into a single character string. Don’t forget to say collapse =
@@ -557,7 +557,7 @@ together into a single character string. Don’t forget to say collapse =
 paste(my_name, collapse = " ")
 ```
 
-    [1] "My name is Georgy"
+    [1] "My name is Mary"
 
 In the simplest case, we can join two character vectors that are each of
 length 1 (i.e. join two words). Try paste(“Hello”,“world!”, sep = ” “),
