@@ -5,8 +5,7 @@ format:
     md:
         output-file: README.md
 ---
-
-# Введение в R
+# Лабораторная работа №1
 
 ## Цели:
 
